@@ -12,10 +12,11 @@ public class GameLauncher {
     public static void main(String[] args) {
         Game juego = new Game();
 
-        juego.agregar("Maria");
-        juego.agregar("Juan");
+        while (!juego.esJugable()) {
+            juego.agregar("Maria");
+            juego.agregar("Juan");
+        }
         juego.agregar("Antonio");
-
         Random rand = new Random();
 
         do {
@@ -27,7 +28,6 @@ public class GameLauncher {
             } else {
                 noGanador = juego.fueRespuestaCorrecta();
             }
-
 
 
         } while (noGanador);

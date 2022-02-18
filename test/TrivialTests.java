@@ -23,4 +23,22 @@ public class TrivialTests {
         String actual= trivial.nuevaPosicionJugador();
         Assertions.assertEquals(expected,actual);
     }
+
+    @Test
+    public void esJugableFalseTest(){
+        Game trivial= new Game();
+        trivial.agregar("Maria");
+        boolean esJugableTest= trivial.esJugable();
+        Assertions.assertFalse(esJugableTest);
+    }
+
+    @Test
+    public void esJugableTrueTest(){
+        Game trivial= new Game();
+        trivial.agregar("Maria");
+        trivial.agregar("Juan");
+        boolean esJugableTest= trivial.esJugable();
+        Assertions.assertTrue(esJugableTest);
+    }
+
 }
