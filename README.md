@@ -6,7 +6,7 @@ Extraemos el codigo duplicado a un unico metodo "nuevaPosicioJugador", el que ah
 
 Creamos un test que compruebe la posicion del jugador "moverCasilla"
 
-##Problema 1
+## Problema 1
 
 Modificamos la clase "GameLauncher" y agregamos el metodo "es jugable" con while false.
 
