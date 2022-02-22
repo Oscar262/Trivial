@@ -26,4 +26,9 @@ Se añade en tirar dados "enCasillaCastigo[jugadorActual] = false;" de tal forma
 
 Se cambia el nombre a la variable "noGanador", por "ganador", y se le da la vuelta a las declaraciones de la variable dentro del "do".
 
+## Problema 5
+
+Se extraen en todos los métodos las líneas:
+- jugadorActual++;
+- if (jugadorActual == jugadores.size()) jugadorActual = 0;
 
