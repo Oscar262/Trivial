@@ -16,7 +16,7 @@ public class GameLauncher {
         juego.agregar("Maria");
         juego.agregar("Juan");
         juego.agregar("Antonio");
-        
+
         Random rand = new Random();
         if (juego.esJugable()) {
             do {
