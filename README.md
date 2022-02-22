@@ -25,3 +25,5 @@ Se añade en tirar dados "enCasillaCastigo[jugadorActual] = false;" de tal forma
 ## Problema 4
 
 Se cambia el nombre a la variable "noGanador", por "ganador", y se le da la vuelta a las declaraciones de la variable dentro del "do".
+
+
