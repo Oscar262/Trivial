@@ -72,4 +72,5 @@ public class TrivialTests {
         Assertions.assertTrue(esJugableTest);
     }
 
+
 }

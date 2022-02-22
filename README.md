@@ -17,3 +17,4 @@ Creamos dos test, uno "esJugableTrueTest" que comprueba si el metodo permite jug
 Modificamos el tamaño de las arrays declaradas en la clase "Game" y poniendo un numero más (en este caso 7), para conseguir que permita introducir seis jugadores , porque las posiciones del array empiezan por 0, por lo tanto si queremos que pueda haber hasta seis el tamaño debe ser un número más de los que realmente quieres introducir.También en la clase "Game" cambiemos el metodo es jugable y añadimos en el return que deve ser menor o igual a seis.
 
 Creamos dos tests nuevos para comprobar que permite hasta seis, "esJugable6JugadoresTest", comprueba que metiendo seis jugadores "esJugable" devuelve "True", y en "esJugableMasDe6JugadoresFalse", comprobamos que se lanza la excepción "ArrayIndexOutOfBoundsException", por lo tanto el programa no continuara.
+

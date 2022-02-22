@@ -16,6 +16,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="25C1xaMl3UdbrS06FpxNOcebQ0r" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -30,7 +38,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager" selected="Application.GameLauncher">
+  <component name="RunManager" selected="JUnit.TrivialTests.saleDeLaCarcelTest">
     <configuration name="GameLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="launcher.GameLauncher" />
       <module name="Trivial" />
@@ -73,11 +81,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrivialTests.true_is_true" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TrivialTests.saleDeLaCarcelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Trivial" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TrivialTests" />
-      <option name="METHOD_NAME" value="true_is_true" />
+      <option name="METHOD_NAME" value="saleDeLaCarcelTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -85,11 +93,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TrivialTests.saleDeLaCarcelTest" />
         <item itemvalue="Application.GameLauncher" />
         <item itemvalue="JUnit.TrivialTests.esJugableMasDe6JugadoresFalseTest" />
         <item itemvalue="JUnit.TrivialTests.esJugable6JugadoresTrueTest" />
         <item itemvalue="JUnit.TrivialTests" />
-        <item itemvalue="JUnit.TrivialTests.true_is_true" />
       </list>
     </recent_temporary>
   </component>
