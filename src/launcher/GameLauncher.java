@@ -25,7 +25,7 @@ public class GameLauncher {
                 juego.tirarDado(rand.nextInt(5) + 1);
 
                 if (rand.nextInt(9) == 7) {
-                    ganador = juego.fueRespuestaCorrecta();
+                    ganador = juego.enLaCarcel();
                 } else {
                     ganador = juego.respuestaIncorrecta();
                 }
