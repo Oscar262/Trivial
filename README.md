@@ -22,6 +22,6 @@ Creamos dos tests nuevos para comprobar que permite hasta seis, "esJugable6Jugad
 
 Se añade en tirar dados "enCasillaCastigo[jugadorActual] = false;" de tal forma que si sales de la carcel se que guardado que sales de ella.
 
-## Problema
+## Problema 4
 
 Se cambia el nombre a la variable "noGanador", por "ganador", y se le da la vuelta a las declaraciones de la variable dentro del "do".
