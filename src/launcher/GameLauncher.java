@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class GameLauncher {
 
-    private static boolean noGanador;
+    private static boolean ganador;
 
     public static void main(String[] args) {
 
@@ -25,13 +25,13 @@ public class GameLauncher {
                 juego.tirarDado(rand.nextInt(5) + 1);
 
                 if (rand.nextInt(9) == 7) {
-                    noGanador = juego.respuestaIncorrecta();
+                    ganador = juego.fueRespuestaCorrecta();
                 } else {
-                    noGanador = juego.fueRespuestaCorrecta();
+                    ganador = juego.respuestaIncorrecta();
                 }
 
 
-            } while (noGanador);
+            } while (ganador);
         } else {
             System.out.println("Debe haber un minimo de dos jugadores");
         }}catch (ArrayIndexOutOfBoundsException e){
