@@ -10,12 +10,16 @@ public class GameLauncher {
     private static boolean noGanador;
 
     public static void main(String[] args) {
-        Game juego = new Game();
 
+        try{
+        Game juego = new Game();
 
         juego.agregar("Maria");
         juego.agregar("Juan");
         juego.agregar("Antonio");
+        juego.agregar("Maria");
+        juego.agregar("Juan");
+        juego.agregar("Juan");
 
         Random rand = new Random();
         if (juego.esJugable()) {
@@ -33,6 +37,9 @@ public class GameLauncher {
             } while (noGanador);
         } else {
             System.out.println("Debe haber un minimo de dos jugadores");
+        }}catch (ArrayIndexOutOfBoundsException e){
+            System.out.println();
+            System.out.println("Debe haber un maximo de 6 jugadores");
         }
     }
 }
