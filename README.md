@@ -18,3 +18,7 @@ Modificamos el tamaño de las arrays declaradas en la clase "Game" y poniendo un
 
 Creamos dos tests nuevos para comprobar que permite hasta seis, "esJugable6JugadoresTest", comprueba que metiendo seis jugadores "esJugable" devuelve "True", y en "esJugableMasDe6JugadoresFalse", comprobamos que se lanza la excepción "ArrayIndexOutOfBoundsException", por lo tanto el programa no continuara.
 
+## Problema 3
+
+Se añade en tirar dados "enCasillaCastigo[jugadorActual] = false;" de tal forma que si sales de la carcel se que guardado que sales de ella.
+
