@@ -6,9 +6,9 @@ Extraemos el codigo duplicado a un unico metodo "nuevaPosicioJugador", el que ah
 
 Creamos un test que compruebe la posicion del jugador "moverCasilla"
 
-##Problema 1
+## Problema 1
 
-Modificamos la clase "GameLauncher" y agregamos el metodo "es jugable" con while false.
+Modificamos la clase "GameLauncher" y agregamos el metodo "es jugable" con un if antes de empezar el juego, y si hay menos de dos jugadores salta un aviso y el juego no se ejecuta.
 
-Creamos dos test, uno "esJugableTrueTest" que comprueba si el metodo permite jugar, y otro "esJugableFalseTest" que demuestra que si solo hay un jugador el metodo devvuelve "false", y crearía otro jugador al ejecuutar el programa 
+Creamos dos test, uno "esJugableTrueTest" que comprueba si el metodo permite jugar, y otro "esJugableFalseTest" que demuestra que si solo hay un jugador el metodo devuelve "false".
 
