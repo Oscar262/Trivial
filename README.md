@@ -32,3 +32,9 @@ Se extraen en todos los métodos las líneas:
 - jugadorActual++;
 - if (jugadorActual == jugadores.size()) jugadorActual = 0;
 
+## Problema 6
+
+El método "fueRespuestaCorrecta" se le cambia el nombre por enLaCarcel, y se extran a un nuevo método "fueRespuestaCorrecta" las líneas:
+- System.out.println("Respuesta correcta!!!!");
+- monederos[jugadorActual]++;
+- System.out.println(jugadores.get(jugadorActual) +" ahora tiene " + monederos[jugadorActual] + " monedas doradas.");
