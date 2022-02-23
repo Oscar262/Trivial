@@ -39,3 +39,6 @@ El método "fueRespuestaCorrecta" se le cambia el nombre por enLaCarcel, y se ex
 - monederos[jugadorActual]++;
 - System.out.println(jugadores.get(jugadorActual) +" ahora tiene " + monederos[jugadorActual] + " monedas doradas.");
 
+## Probnlema 7
+
+Se crean tres métodos para crear preguntas y si las listas se quedan vacias llamas a estos métodos
