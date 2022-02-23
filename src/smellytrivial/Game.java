@@ -22,18 +22,40 @@ public class Game {
             preguntasCultura.addLast("Pregunta de Cultura " + i);
             preguntasCiencias.addLast(("Pregunta de Ciencias " + i));
             preguntasDeportes.addLast(("Pregunta de Deportes " + i));
-            preguntasMusica.addLast(crearPreguntaMusica(i));
+            preguntasMusica.addLast(crearPreguntaMusica()+i);
+        }nuevasPreguntas();
+    }
+
+    private void nuevasPreguntas(){
+        if (preguntasCiencias.isEmpty()) {
+            preguntasCiencias.add(crearPreguntaCiencias());
+        }if (preguntasCultura.isEmpty()) {
+            preguntasCultura.add(crearPreguntaCultura());
+        }if (preguntasDeportes.isEmpty()) {
+            preguntasDeportes.add(crearPreguntaDeporte());
+        }if (preguntasMusica.isEmpty()){
+            preguntasMusica.add(crearPreguntaMusica());
         }
     }
 
-    public String crearPreguntaMusica(int index) {
-        return "Pregunta de Música " + index;
+    public String crearPreguntaMusica() {
+        return "Pregunta de Música ";
+    }
+
+    public String crearPreguntaCultura() {
+        return "Pregunta de Cultura ";
+    }
+
+    public String crearPreguntaDeporte() {
+        return "Pregunta de Deporte ";
+    }
+
+    public String crearPreguntaCiencias() {
+        return "Pregunta de Ciencias ";
     }
 
     public boolean esJugable() {
         return cuantosJugadores() >= 2 && cuantosJugadores() <= 6;
-
-
     }
 
     public boolean agregar(String playerName) {
@@ -116,7 +138,7 @@ public class Game {
         return "Música";
     }
 
-    public boolean enLaCarcel() {
+    public boolean respuestaCorrecta() {
         if (enCasillaCastigo[jugadorActual]) {
             if (estaSaliendoDeLaCarcel) {
                 fueRespuestaCorrecta();
@@ -162,11 +184,11 @@ public class Game {
         enCasillaCastigo[jugadorActual] = true;
 
         siguienteJugador();
-        return true;
+        return false;
     }
 
 
     private boolean jugadorHaGanado() {
-        return !(monederos[jugadorActual] == 6);
+        return (monederos[jugadorActual] == 6);
     }
 }

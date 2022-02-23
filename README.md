@@ -24,7 +24,7 @@ Se añade en tirar dados "enCasillaCastigo[jugadorActual] = false;" de tal forma
 
 ## Problema 4
 
-Se cambia el nombre a la variable "noGanador", por "ganador", y se le da la vuelta a las declaraciones de la variable dentro del "do".
+Se cambia el nombre a la variable "noGanador", por "ganador".
 
 ## Problema 5
 
@@ -38,3 +38,4 @@ El método "fueRespuestaCorrecta" se le cambia el nombre por enLaCarcel, y se ex
 - System.out.println("Respuesta correcta!!!!");
 - monederos[jugadorActual]++;
 - System.out.println(jugadores.get(jugadorActual) +" ahora tiene " + monederos[jugadorActual] + " monedas doradas.");
+

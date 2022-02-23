@@ -11,30 +11,31 @@ public class GameLauncher {
 
     public static void main(String[] args) {
 
-        try{
-        Game juego = new Game();
+        try {
+            Game juego = new Game();
 
-        juego.agregar("Maria");
-        juego.agregar("Juan");
-        juego.agregar("Antonio");
+            juego.agregar("Maria");
+            juego.agregar("Juan");
+            juego.agregar("Antonio");
 
-        Random rand = new Random();
-        if (juego.esJugable()) {
-            do {
+            Random rand = new Random();
+            if (juego.esJugable()) {
+                do {
 
-                juego.tirarDado(rand.nextInt(5) + 1);
+                    juego.tirarDado(rand.nextInt(5) + 1);
 
-                if (rand.nextInt(9) == 7) {
-                    ganador = juego.enLaCarcel();
-                } else {
-                    ganador = juego.respuestaIncorrecta();
-                }
+                    if (rand.nextInt(9) == 7) {
+                        ganador = juego.respuestaIncorrecta();
+                    } else {
+                        ganador = juego.respuestaCorrecta();
+                    }
 
 
-            } while (ganador);
-        } else {
-            System.out.println("Debe haber un minimo de dos jugadores");
-        }}catch (ArrayIndexOutOfBoundsException e){
+                } while (!ganador);
+            } else {
+                System.out.println("Debe haber un minimo de dos jugadores");
+            }
+        } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println();
             System.out.println("Debe haber un maximo de 6 jugadores");
         }
