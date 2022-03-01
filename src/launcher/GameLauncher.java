@@ -31,7 +31,7 @@ public class GameLauncher {
                     }
 
 
-                } while (!ganador);
+                } while (ganador);
             } else {
                 System.out.println("Debe haber un minimo de dos jugadores");
             }

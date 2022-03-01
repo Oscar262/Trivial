@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7a4d3de0-4441-4fe0-92ec-e50a75078308" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/launcher/GameLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/launcher/GameLauncher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/smellytrivial/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/smellytrivial/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TrivialTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TrivialTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +37,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager" selected="Application.GameLauncher">
+  <component name="RunManager" selected="JUnit.TrivialTests.listasVacias">
     <configuration name="GameLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="launcher.GameLauncher" />
       <module name="Trivial" />
@@ -51,30 +51,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrivialTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Trivial" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TrivialTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TrivialTests.esJugable6JugadoresTrueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Trivial" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TrivialTests" />
-      <option name="METHOD_NAME" value="esJugable6JugadoresTrueTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TrivialTests.esJugableMasDe6JugadoresFalseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Trivial" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TrivialTests" />
       <option name="METHOD_NAME" value="esJugableMasDe6JugadoresFalseTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrivialTests.listasVacias" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Trivial" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TrivialTests" />
+      <option name="METHOD_NAME" value="listasVacias" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrivialTests.saleDeLaCarcel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Trivial" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TrivialTests" />
+      <option name="METHOD_NAME" value="saleDeLaCarcel" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -92,11 +93,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TrivialTests.listasVacias" />
+        <item itemvalue="JUnit.TrivialTests.saleDeLaCarcel" />
         <item itemvalue="Application.GameLauncher" />
         <item itemvalue="JUnit.TrivialTests.saleDeLaCarcelTest" />
         <item itemvalue="JUnit.TrivialTests.esJugableMasDe6JugadoresFalseTest" />
-        <item itemvalue="JUnit.TrivialTests.esJugable6JugadoresTrueTest" />
-        <item itemvalue="JUnit.TrivialTests" />
       </list>
     </recent_temporary>
   </component>

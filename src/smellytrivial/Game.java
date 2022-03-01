@@ -23,7 +23,8 @@ public class Game {
             preguntasCiencias.addLast(("Pregunta de Ciencias " + i));
             preguntasDeportes.addLast(("Pregunta de Deportes " + i));
             preguntasMusica.addLast(crearPreguntaMusica()+i);
-        }nuevasPreguntas();
+        }
+        nuevasPreguntas();
     }
 
     private void nuevasPreguntas(){
@@ -184,11 +185,29 @@ public class Game {
         enCasillaCastigo[jugadorActual] = true;
 
         siguienteJugador();
-        return false;
+        boolean ganador = jugadorHaGanado();
+        return ganador;
     }
 
 
     private boolean jugadorHaGanado() {
-        return (monederos[jugadorActual] == 6);
+        return !(monederos[jugadorActual] == 6);
     }
+
+    public boolean[] getEnCasillaCastigo() {
+        return enCasillaCastigo;
+    }
+
+    public LinkedList getPreguntasCultura() {
+        return preguntasCultura;
+    }
+
+    public LinkedList getPreguntasCiencias() {
+        return preguntasCiencias;
+    }
+
+    public LinkedList getPreguntasDeportes() {
+        return preguntasDeportes;
+    }
+
 }

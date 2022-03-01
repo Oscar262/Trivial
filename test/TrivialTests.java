@@ -5,46 +5,46 @@ import smellytrivial.Game;
 
 public class TrivialTests {
     @Test
-    public void true_is_true(){
+    public void true_is_true() {
         Assertions.assertTrue(true);
     }
 
     @Test
-    public void crear_Game(){
+    public void crear_Game() {
         Game trivial = new Game();
     }
 
     @Test
-    public void moverCasilla(){
-        Game trivial= new Game();
+    public void moverCasilla() {
+        Game trivial = new Game();
         trivial.agregar("Maria");
         trivial.agregar("Juan");
         trivial.tirarDado(1);
         String expected = "La nueva posición de Maria es 1";
-        String actual= trivial.nuevaPosicionJugador();
-        Assertions.assertEquals(expected,actual);
+        String actual = trivial.nuevaPosicionJugador();
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
-    public void esJugableFalseTest(){
-        Game trivial= new Game();
+    public void esJugableFalseTest() {
+        Game trivial = new Game();
         trivial.agregar("Maria");
-        boolean esJugableTest= trivial.esJugable();
+        boolean esJugableTest = trivial.esJugable();
         Assertions.assertFalse(esJugableTest);
     }
 
     @Test
-    public void esJugableTrueTest(){
-        Game trivial= new Game();
+    public void esJugableTrueTest() {
+        Game trivial = new Game();
         trivial.agregar("Maria");
         trivial.agregar("Juan");
-        boolean esJugableTest= trivial.esJugable();
+        boolean esJugableTest = trivial.esJugable();
         Assertions.assertTrue(esJugableTest);
     }
 
     @Test
-    public void esJugableMasDe6JugadoresFalseTest() throws ArrayIndexOutOfBoundsException{
-        Game trivial= new Game();
+    public void esJugableMasDe6JugadoresFalseTest() throws ArrayIndexOutOfBoundsException {
+        Game trivial = new Game();
         try {
             trivial.agregar("Maria");
             trivial.agregar("Maria");
@@ -53,23 +53,45 @@ public class TrivialTests {
             trivial.agregar("Maria");
             trivial.agregar("Maria");
             trivial.agregar("Maria");
-        }catch (ArrayIndexOutOfBoundsException e){
-            boolean esJugableTest= trivial.esJugable();
+        } catch (ArrayIndexOutOfBoundsException e) {
+            boolean esJugableTest = trivial.esJugable();
             Assertions.assertFalse(esJugableTest);
         }
     }
 
     @Test
-    public void esJugable6JugadoresTrueTest(){
-        Game trivial= new Game();
+    public void esJugable6JugadoresTrueTest() {
+        Game trivial = new Game();
         trivial.agregar("Maria");
         trivial.agregar("Juan");
         trivial.agregar("Maria");
         trivial.agregar("Juan");
         trivial.agregar("Maria");
         trivial.agregar("Juan");
-        boolean esJugableTest= trivial.esJugable();
+        boolean esJugableTest = trivial.esJugable();
         Assertions.assertTrue(esJugableTest);
+    }
+
+    @Test
+    public void saleDeLaCarcel() {
+        Game trivial = new Game();
+        trivial.agregar("Maria");
+        trivial.agregar("Juan");
+        trivial.tirarDado(1);
+        trivial.respuestaIncorrecta();
+        trivial.tirarDado(1);
+        trivial.respuestaCorrecta();
+        trivial.tirarDado(1);
+        trivial.respuestaCorrecta();
+        Assertions.assertFalse(false);
+    }
+
+    @Test
+    public void listasVacias() {
+        Game trivial = new Game();
+        boolean estaVacio = trivial.getPreguntasCiencias().isEmpty();
+        trivial.crearPreguntaCiencias();
+        Assertions.assertFalse(estaVacio);
     }
 
 
